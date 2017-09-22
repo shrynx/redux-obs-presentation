@@ -1,0 +1,18 @@
+const add = () => {
+  return {
+    type: 'ADD'
+  }
+}
+
+const subtract = () => {
+  return {
+    type: 'SUBTRACT'
+  }
+}
+
+const addValue = (value) => {
+  return {
+    type: 'ADD_VALUE',
+    value: value
+  }
+}

@@ -1,0 +1,7 @@
+const noteStream = Rx.Observable.interval(1000)
+
+const evenStream = noteStream
+                    .filter(seconds => seconds%2 === 0)
+
+const birdStream = evenStream
+                    .map(time => `${time} sec elapsed`)
